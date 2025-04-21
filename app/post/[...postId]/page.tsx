@@ -1,8 +1,8 @@
 
 
-export default async function PostPage({params}:{params:{
+export default async function PostPage({params}:{params:Promise<{
     postId:number[]
-}}){
+}>}){
     const paramsIds = (await params).postId;
 
     return <div>
